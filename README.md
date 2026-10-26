@@ -42,7 +42,12 @@ tail -20 /tmp/opencode/desktop-notify-trace.log
 cp desktop-notify.ts ~/.config/opencode/plugins/
 ```
 
-2. 重启 OpenCode 即可生效。
+2. 重启 OpenCode 即可生效（已加载的配置可用 `opencode reload`）。
+
+> 想保留 git 版本管理时**不要**直接 `git clone` 到 `~/.config/opencode/plugins/`：
+> 里面的 `.git/` 会被 OpenCode 当成插件包加载并报 `Plugin failed to load`。
+> 本机把仓库本体放在 `~/.config/opencode/.plugins-git`，插件目录只是工作区，
+> 详见 `agent.md`。
 
 ## 配置
 
