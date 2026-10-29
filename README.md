@@ -1,11 +1,9 @@
-# OpenCode Plugins
+# desktop-notify
 
-一组用于 [OpenCode](https://opencode.ai) 的实用插件。
+用于 [OpenCode](https://opencode.ai) 的桌面通知插件。
 
-> 仓库现在只有 `desktop-notify.ts`。早期的 `auto-continue.ts`（自动续写）和
-> `bash-timeout.ts`（bash 超时）已过时并移除，历史版本见 git log。
-
-## 插件列表
+> 本仓库原为 `opencode-plugins` 插件集合，现已拆分/收敛为单个插件；早期的
+> `auto-continue.ts`（自动续写）和 `bash-timeout.ts`（bash 超时）已移除，历史版本见 git log。
 
 ### desktop-notify.ts
 

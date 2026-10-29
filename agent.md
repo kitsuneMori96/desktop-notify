@@ -10,7 +10,7 @@
 
 `plugins/.git` 只是一个 gitlink 文件（内容一行 `gitdir: /home/kitsunemori/.config/opencode/.plugins-git`），
 所以在这里 `git status` / `git commit` / `git push` 照常可用，改动自动落到
-<https://github.com/kitsuneMori96/opencode-plugins>（SSH，分支 `main`）。
+<https://github.com/kitsuneMori96/desktop-notify>（SSH，分支 `main`）。
 
 ## 为什么不能把 `.git/` 放回本目录
 
@@ -29,7 +29,7 @@ cause: AggregateError: 2 errors building ".../plugins/.git/index"
 cd ~/.config/opencode
 rm -rf plugins/.git
 git clone --separate-git-dir ~/.config/opencode/.plugins-git \
-  git@github.com:kitsuneMori96/opencode-plugins.git /tmp/opencode-plugins-checkout
+  git@github.com:kitsuneMori96/desktop-notify.git /tmp/desktop-notify-checkout
 # 或：已有 .plugins-git 时，只把 gitlink 文件写回来
 printf 'gitdir: %s\n' "$PWD/.plugins-git" > plugins/.git
 opencode reload    # 重扫插件，无需重启
