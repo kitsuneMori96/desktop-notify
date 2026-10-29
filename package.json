@@ -1,6 +1,6 @@
 {
   "name": "@kitsunemori96/opencode-desktop-notify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenCode 桌面通知插件：WSL → Windows 声音 + Toast + 点击跳回终端",
   "type": "module",
   "main": "./dist/desktop-notify.js",
