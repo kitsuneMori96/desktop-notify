@@ -35,14 +35,14 @@ tail -20 /tmp/opencode/desktop-notify-trace.log
 ### 从 npm 安装（推荐）
 
 ```bash
-npm i @kitsunemori/opencode-desktop-notify
+npm i @kitsunemori96/opencode-desktop-notify
 ```
 
 然后在 `~/.config/opencode/opencode.jsonc` 的 `plugins` 里加上包名：
 
 ```jsonc
 {
-  "plugins": ["@kitsunemori/opencode-desktop-notify"]
+  "plugins": ["@kitsunemori96/opencode-desktop-notify"]
 }
 ```
 
