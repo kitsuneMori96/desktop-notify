@@ -5,8 +5,6 @@
 > 本仓库原为 `opencode-plugins` 插件集合，现已拆分/收敛为单个插件；早期的
 > `auto-continue.ts`（自动续写）和 `bash-timeout.ts`（bash 超时）已移除，历史版本见 git log。
 
-### desktop-notify.ts
-
 桌面通知插件（WSL → Windows）。在 WSL 环境下向 Windows 发送声音通知和 Toast 通知。
 
 **特性：**
@@ -33,6 +31,24 @@ tail -20 /tmp/opencode/desktop-notify-trace.log
 - 有 `fire` 但无 `spawn exit=0` → PowerShell 侧失败
 
 ## 安装
+
+### 从 npm 安装（推荐）
+
+```bash
+npm i @kitsunemori/opencode-desktop-notify
+```
+
+然后在 `~/.config/opencode/opencode.jsonc` 的 `plugins` 里加上包名：
+
+```jsonc
+{
+  "plugins": ["@kitsunemori/opencode-desktop-notify"]
+}
+```
+
+重启 OpenCode 生效（已加载的配置可用 `opencode reload`）。
+
+### 从源码安装
 
 1. 将插件文件复制到 `~/.config/opencode/plugins/` 目录：
 

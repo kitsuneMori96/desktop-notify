@@ -1,0 +1,51 @@
+{
+  "name": "@kitsunemori/opencode-desktop-notify",
+  "version": "0.1.0",
+  "description": "OpenCode 桌面通知插件：WSL → Windows 声音 + Toast + 点击跳回终端",
+  "type": "module",
+  "main": "./dist/desktop-notify.js",
+  "types": "./dist/desktop-notify.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/desktop-notify.d.ts",
+      "import": "./dist/desktop-notify.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "desktop-notifications",
+    "wsl",
+    "windows",
+    "toast"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitsuneMori96/desktop-notify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kitsuneMori96/desktop-notify/issues"
+  },
+  "homepage": "https://github.com/kitsuneMori96/desktop-notify#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.2.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.19.4",
+    "@types/bun": "^1.4.4",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
